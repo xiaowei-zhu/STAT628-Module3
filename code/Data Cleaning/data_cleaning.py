@@ -29,7 +29,6 @@ for file in filelist:
 bars_business_id = list()
 for i in range(len(data['business'])):
     if data['business'].iloc[i, -2] and data['business'].iloc[i, -3] and data['business'].iloc[i, -4] and 'Cocktail Bars' in data['business'].iloc[i, -2].split(', '):
-        # 'categories' not null, open, bars in categories
         bars_business_id.append(data['business'].iloc[i, 0])
 
 # filter data
